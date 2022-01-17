@@ -1,18 +1,18 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: argocd-app-1
+  name: bank-of-anthos
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
     server: https://kubernetes.default.svc
-    namespace: argocd-app-1
+    namespace: bank-of-anthos
 
   project: default
   source:
-    repoURL: https://github.com/josephoyomikavala/argocd-app-1.git
+    repoURL: https://github.com/josephoyomikavala/bank-of-anthos.git
     targetRevision: HEAD
     path: apps
 
