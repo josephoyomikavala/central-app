@@ -14,7 +14,6 @@ spec:
   source:
     repoURL: https://github.com/josephoyomikavala/bank-of-anthos.git
     targetRevision: HEAD
-    path: apps
 
   syncPolicy:
     syncOptions:
