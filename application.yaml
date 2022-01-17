@@ -1,0 +1,25 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: sample-argo
+  namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: myapp
+
+  project: default
+  source:
+    repoURL: https://github.com/josephoyomikavala/central-app.git
+    targetRevision: HEAD
+    path: apps
+
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true # create namespace on the fly
+
+    automated:
+      selfHeal: true # negate manual kubectl commands
+      prune: true
