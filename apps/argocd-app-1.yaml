@@ -14,6 +14,7 @@ spec:
   source:
     repoURL: https://github.com/josephoyomikavala/argocd-app-1.git
     targetRevision: HEAD
+    path: .
 
   syncPolicy:
     syncOptions:
