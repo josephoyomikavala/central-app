@@ -14,7 +14,7 @@ spec:
   source:
     repoURL: https://github.com/josephoyomikavala/bank-of-anthos.git
     targetRevision: HEAD
-    path: .
+    path: dev-kubernetes-manifests
 
   syncPolicy:
     syncOptions:
