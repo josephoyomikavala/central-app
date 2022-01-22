@@ -12,7 +12,7 @@ spec:
 
   project: default
   source:
-    repoURL: https://github.com/josephoyomikavala/argocd-app-1.git
+    repoURL: https://github.com/josephoyomikavala/manifest-repo.git
     targetRevision: HEAD
     path: .
 
