@@ -14,7 +14,7 @@ spec:
   source:
     repoURL: https://github.com/josephoyomikavala/manifest-repo.git
     targetRevision: HEAD
-    path: .
+    path: source
 
   syncPolicy:
     syncOptions:
